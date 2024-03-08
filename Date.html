@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Will you date me?</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: left; 
+      background-image:url(https://i.imgur.com/V9jRcRp.jpg); 
+      background-size: contain; 
+      background-repeat: no-repeat; 
+      background-position: center; 
+      background-color: rgba(143, 0, 255, 0.5); 
+      display: flex;
+      flex-direction: column; 
+      justify-content: flex-start;
+      align-items: flex-start;
+      height: 100vh; 
+      padding: 40px;
+    }
+    #question {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      margin: 10px;
+      font-size: 18px;
+      cursor: pointer;
+      border: 1px solid #000;
+      border-radius: 5px;
+      background-color: #f0f0f0;
+      text-decoration: none;
+      color: #000;
+    }
+    .btn:hover {
+      background-color: #e0e0e0;
+    }
+</style>
+  <script>
+    function displayMessage(button) {
+      if (button === 1) {
+        alert("Great! Let's go on a date!");
+      } else if (button === 2) {
+        alert("You're not following the script! Try again");
+      }
+    }
+  </script>
+</head>
+<body>
+  <h1 id="question">Love me for 6 more years?</h1>
+  <button class="btn" onclick="displayMessage(1)">Yes</button>
+  <button class="btn" onclick="displayMessage(2)">No</button>
+</body>
+</html>
+
+
+
+
